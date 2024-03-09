@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "burnedpy"
+version = "0.1.0"
+description = ""
+authors = ["Felipe Carlos <efelipecarlos@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "burnedpy"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+geoalchemy2 = "^0.14.3"
+sqlmodel = "^0.0.14"
+pydash = "^7.0.7"
+shapely = "^2.0.2"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.13"
+pre-commit = "^3.6.0"
+pytest = "^7.4.4"
+
+[tool.poetry.group.api]
+optional = true
+
+[tool.poetry.group.api.dependencies]
+geopandas = "^0.14.3"
+
+[tool.poetry.scripts]
+black = "black:patched_main"
+
+[tool.isort]
+profile = "black"
+line_length = 88
+skip_glob = [ "docs", "notes" ]
+
+[tool.ruff]
+select = [
+  "E",   # pycodestyle
+  "F",   # pyflakes
+  "UP",  # pyupgrade
+  "I",   # isort
+  "N",   # pep8 naming
+  "PL",  # pylint
+]
+
+[tool.ruff.lint.pylint]
+max-args = 10
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

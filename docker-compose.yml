@@ -1,0 +1,17 @@
+#
+# Copyright (C) 2024 BurnedPy.
+#
+# BurnedPy is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+#
+
+version: "3"
+
+services:
+  burnedpy:
+    image: burnedpy/burnedpy:v0.1.0
+    build: .
+    container_name: burnedpy
+    tty: true
+    volumes:
+      - ${PWD}:/project
