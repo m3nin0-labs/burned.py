@@ -5,7 +5,7 @@
 # under the terms of the MIT License; see LICENSE file for more details.
 #
 
-FROM python:3.11-alpine3.18
+FROM python:3.11-alpine3.17
 
 ENV SPATIALITE_LIBRARY_PATH=mod_spatialite
 
