@@ -16,6 +16,14 @@ The core of `burned.py` provides the fundamental functionalities of indexing and
 
 The high-level API abstracts the complexities of the core functionalities using GeoPandas, enabling users to easily index and search for fire data without needing to interact directly with the underlying components.
 
+## Installation
+
+You can install `burned.py` using:
+
+```
+pip install git+https://github.com/m3nin0-labs/burned.py
+```
+
 ## Usage
 
 To use the High-level API, two steps are required:
@@ -49,3 +57,11 @@ manager = FirespotsDataManager()
 results = manager.search((-26.470573, -54.536133, -21.902278, -48.471680))
 results.head(5)
 ```
+
+## Contributing
+
+We welcome contributions! If you have suggestions for improvements or bug fixes, please feel free to fork the repository and submit a pull request.
+
+## License
+
+`burned.py` is distributed under the MIT license. See `LICENSE` for more details.
