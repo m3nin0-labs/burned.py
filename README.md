@@ -55,7 +55,7 @@ manager = FirespotsDataManager()
 
 # Perform a search within a geographical bounding box
 results = manager.search((-26.470573, -54.536133, -21.902278, -48.471680))
-results.head(5)
+results.head(5) # Output: GeoDataFrame
 ```
 
 ## Contributing
