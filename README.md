@@ -10,7 +10,7 @@ The library is divided into two main components:
 
 **1. Core**
 
-The core of `burned.py` provides the fundamental functionalities of indexing and searching for fire data. Built on top of technologies like Spatialite and SQLModel, the core is versatile enough to support the development of RESTful APIs, CLI applications, and more.
+The core of `burned.py` provides the fundamental functionalities of indexing and searching for fire data. Built on top of technologies like [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index) and [SQLModel](https://sqlmodel.tiangolo.com/), the core is versatile enough to support the development of RESTful APIs, CLI applications, and more.
 
 **2. High-level API**
 
@@ -30,7 +30,7 @@ To use the High-level API, two steps are required:
 
 **Indexing Data**
 
-Indexing is the process of organizing data in a way that makes it easier to retrieve. In the context of `burned.py`, indexing involves reading and storing data from CSV files into Spatialite, allowing for efficient searching. To index data, users can utilize the following example code:
+Indexing is the process of organizing data in a way that makes it easier to retrieve. In the context of `burned.py`, indexing involves reading and storing data from CSV files into [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index), allowing for efficient searching. To index data, users can utilize the following example code:
 
 ```python
 from burnedpy.manager import FirespotsDataManager
