@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "burnedpy"
 version = "0.1.0"
-description = ""
+description = "Index and Search data from Queimadas/INPE"
 authors = ["Felipe Carlos <efelipecarlos@gmail.com>"]
 license = "MIT"
 readme = "README.md"
